@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>会员中心</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+<style>
+    .bottom-menu span{
+        top: 3px !important;
+    }
+    .icon-down{
+        background: url(/Static/Wechat/Images/vip/jiantou.png) no-repeat 5px center;
+        background-size: 17px 17px;
+    }
+</style>
+</head>
+<body>
+    <div id="user_center-wrap">
+        <section class="user-info">
+            <img src="http://wx.qlogo.cn/mmopen/ZMdxSDafpxTTmS4KF6wicwFCJArD6RPKDGBog4ibY53fDQI0dftnGGCmBk5wRJlmZhF3yaU46JBHeDEdo1rfxic3hDIW1nfKljr/0" />
+            <div class="user-content">
+                <div class="user-name">人不吃肉就要瘦</div>
+                <div class="user-jifen">代言积分：245</div>
+            </div>
+        </section>
+        <div class="user-desc">
+            <ul class="clearfix">
+                <li>
+                    <div class="jifen-num">188</div>
+                    <div class="text">累计积分</div>
+                </li>
+                 <li>
+                    <div class="jifen-num">188</div>
+                    <div class="text">奖励积分</div>
+                </li>
+                 <li>
+                    <div class="code-img"></div>
+                    <div class="text">生存二维码</div>
+                </li>
+                 <li>
+                    <div class="money-img"></div>
+                    <div class="text">佣金管理</div>
+                </li>
+            </ul>
+        </div>
+        <section class="order-list" style="margin-bottom:0px;">
+            <a class="bar text-right smallBar line" href="/wechat/order/index.html">
+                <label>
+                    <span class="icon-small-dingdan"></span>我的订单
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+        </section>
+        <section class="nav">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <i class="mess-num">2</i>
+                        <img src="./static/images/grzx-dfk.png">
+                        <div class="nav-name">待付款</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="mess-num">2</i>
+                        <img src="./static/images/grzx-dfh.png">
+                        <div class="nav-name">待发货</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="mess-num">2</i>
+                        <img src="./static/images/grzx-dsh.png">
+                        <div class="nav-name">待收货</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="mess-num">2</i>
+                        <img src="./static/images/grzx-dpl.png">
+                        <div class="nav-name">待评价</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="mess-num">2</i>
+                        <img src="./static/images/grzx-sh.png">
+                        <div class="nav-name">退款/售后</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="order-list">
+            <a class="bar text-right smallBar fenxiao curr" style="color: #1F1F1F;" href="javascript:void(0)">
+                <label>
+                    <span class="icon-small-fenxiao"></span>我的分销
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+            <div class="down" style="display: none;">
+                <a href="/wechat/branch_user/person/type/1.html" class="bar text-right smallBa line">
+                    <label class="f12">
+                        <span class="pl37"></span>一级经销<span class="branch_people">(1)</span>
+                    </label>
+                    <span class="c9"></span>
+                    <span class="icon-right"></span>
+
+                </a>
+                <a href="/wechat/branch_user/person/type/2.html" class="bar text-right smallBa line">
+                    <label class="f12">
+                        <span class="pl37"></span>二级经销<span class="branch_people">(0)</span>
+                    </label>
+                    <span class="c9"></span>
+                    <span class="icon-right"></span>
+
+                </a>
+                <a href="/wechat/branch_user/person/type/3.html" class="bar text-right smallBa">
+                    <label class="f12">
+                        <span class="pl37"></span>三级经销<span class="branch_people">(0)</span>
+                    </label>
+                    <span class="c9"></span>
+                    <span class="icon-right"></span>
+
+                </a>
+
+            </div>
+          
+        </section>
+        <section class="order-list">
+            <a class="bar text-right smallBar line" href="/wechat/branch_order/index.html">
+                <label>
+                    <span class="icon-small-fydingdan"></span>分佣订单
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+             <a class="bar text-right smallBar" href="/wechat/branch_order/index.html">
+                <label>
+                    <span class="icon-small-address"></span>地址管理
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+        </section>  
+        <section class="order-list">
+
+            <a href="/wechat/collection/index.html"  class="bar text-right smallBar line">
+                <label>
+                    <span class="icon-small-sc"></span>我的收藏
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+            <a class="bar text-right smallBar line" href="/wechat/user/person.html">
+                <label>
+                    <span class="icon-small-data"></span>个人资料
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+             <a class="bar text-right smallBar" href="/wechat/user/person.html">
+                <label>
+                    <span class="icon-small-sb"></span>我的设备
+                </label>
+                <span class="c9"></span>
+                <span class="icon-right"></span>
+            </a>
+        </section>
+
+        <section class="order-list  bottom_footer_margin">
+            <a href="/wechat/article/weixin/id/3.html" class="bar text-right smallBar line">
+                <label>
+                    <span class="icon-small-bj"></span>背景
+                </label>
+                <span class="icon-right"></span>
+            </a>
+            <a href="/wechat/article/weixin/id/3.html" class="bar text-right smallBar">
+                <label>
+                    <span class="icon-small-concat"></span>联系我们
+                </label>
+                <span class="icon-right"></span>
+            </a>
+        </section>
+    </div>
+    <!--  版权所有 start-->
+    <div class="copyright">
+        版权©2016 空气小白  腾信通
+    </div>
+    <!--  版权所有 end-->
+    <div style="height:0.50rem"></div>
+    <!-- 底部悬浮栏start -->
+    <footer>
+        <ul class="bottom-menu clearfix">
+            <li class="">
+                <a href="./index.html">
+                    <div class="img-style"></div>
+                    <div class="text">首页</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./cart.html" class="">
+                    <div class="img-style"></div>
+                    <div class="text">发现</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./order_list.html" class="">
+                    <div class="img-style"></div>
+                    <div class="text">购物车</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="./user.html" class="c3">
+                    <div class="img-style"></div>
+                    <div class="text">我的</div>
+                </a>
+            </li>
+        </ul>
+    </footer>   
+
+
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/js/dropdown_menu.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+</body>
+</html>

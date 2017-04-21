@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>编辑收货地址</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+<style>
+    body{
+        color:#f5f5f5;
+    }
+</style>
+</head>
+<body>
+<div id="add-edit-wrap">
+<header class="touch-header">
+    <a href="javascript:window.history.go(-1)" class="header-back"></a>
+    <div class="header-title">编辑收货地址</div>
+</header>
+ <form action="form_action.php" method="post" id="myForm">
+    <div class="wrap-box">
+        <section class="input-group">
+            <div class="ipt-list">
+                <div class="input-wrap">
+                    <div class="text">
+                        <span>收货人</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="text" class="" name="username" id="name" placeholder="收货人姓名">
+                    </div>
+                </div>
+               
+                <div class="input-wrap">
+                    <div class="text">
+                        <span>联系电话</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="tel" class="" name="tel" id="tel" placeholder="收货人联系电话">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="text">
+                        <span>选择地区</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                         <div id="distpicker3">
+                            <select class="form-control"></select>
+                            <select class="form-control"></select>
+                            <select class="form-control"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="text">
+                        <span>详细地址</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                       
+                        <input type="text" class="" name="address" id="address" placeholder="街道门牌，无需重复地区信息">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="text">
+                        <span>邮政编码</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="text" class="" name="number" id="number" placeholder="邮政编码（选填）">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="btn-wrap">
+        <input type="submit" class="btn-red" value="保存">
+    </div>
+</form>
+</div>
+<div class="copyright">版权©2016 空气小白  腾信通</div>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/plugins/distpicker/distpicker.js"></script>
+<script src="static/plugins/layer/layer.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script>
+    $(function(){
+        $("#distpicker3").distpicker({
+        autoSelect: false,
+        province: "—— 省 ——",
+        city: "—— 市 ——",
+        district: "—— 区 ——"
+      });
+    });
+</script>
+</body>
+</html>

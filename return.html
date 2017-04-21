@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>退货退款</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+    <div id="return-wrap">
+       <div class="item">
+            <ul class="clearfix">
+                <li class="active">
+                    <a href="#">
+                        <div class="box-radius">
+                            1
+                        </div>
+                        <div class="text">提交</div>
+                    </a>
+                </li>
+                <li>
+                     <a href="#">
+                        <div class="box-radius">
+                            2
+                        </div>
+                        <div class="text">审核</div>
+                    </a>
+                </li>
+                <li>
+                     <a href="#">
+                        <div class="box-radius">
+                            3
+                        </div>
+                        <div class="text">完成</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="center-line"></div>
+        </div>
+        <div class="mod-type">
+            <div class="title">选择退货退款方式</div>
+            <div class="content">
+                <ul>
+                    <li class="active">
+                        <div class="pay-name iocn-small-tuihuo">退货退款<span class="f11 c9">（已收到货需要退还已收到的货物）</span></div>
+                        <span class="pay-status selected"></span>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="mod-input">
+            <div class="title">退货说明</div>
+            <div class="ipt-list">
+                <ul>
+                  <li>
+                      <div class="group">
+                            <div class="c3 text"><i class="xing" style="color:#fc7968;">*</i>退货原因</div>
+                            <div class="wrap-ipt">
+                                <select id="select_liyou">
+                                    <option>请选择退货理由</option>
+                                    <option>理由1</option>
+                                    <option>理由2</option>
+                                </select>
+                                <div class="icon-jiao"></div>
+                            </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="group">
+                            <div class="c3 text"><i class="xing" style="color: #fc7968">*</i>退货金额 &nbsp;&nbsp;&nbsp;￥</div>
+                            <div class="wrap-ipt">
+                                <input type="text" class="" name="money" id="num" placeholder="输入退款金额" value="60">
+                            </div>
+                       </div>
+                       <div class="bottom-text c9 f11">（最多60.00元，含发货邮费0.00元）</div>
+                    </li>
+                     <li>
+                       <div class="group">
+                           <div class="trea-text">退货说明</div>
+                            <div class="trea-ipt">
+                                <textarea placeholder="最多200字" id="shuoming"></textarea>
+                            </div>
+                       </div>
+                    </li>
+                    <li>
+                        <div class="wrap-upload clearfix">
+                            <div class="fl lsupload" id="uploader">
+                                <ul class="clearfix">
+                                    <li class="lsli"><img src="http://f.hiphotos.baidu.com/image/pic/item/f2deb48f8c5494ee0d44a9f529f5e0fe98257efc.jpg"/><input type="hidden" id='99' name="" value=''><span class="icon-del"></span></li>
+                                    <li class="lsli"><img src="http://f.hiphotos.baidu.com/image/pic/item/f2deb48f8c5494ee0d44a9f529f5e0fe98257efc.jpg"/><input type="hidden" id='99' name="" value=''><span class="icon-del"></span></li>
+                                    <li class="lsli"><img src="http://f.hiphotos.baidu.com/image/pic/item/f2deb48f8c5494ee0d44a9f529f5e0fe98257efc.jpg"/><input type="hidden" id='99' name="" value=''><span class="icon-del"></span></li>
+                                    <li class="lsli"><img src="http://f.hiphotos.baidu.com/image/pic/item/f2deb48f8c5494ee0d44a9f529f5e0fe98257efc.jpg"/><input type="hidden" id='99' name="" value=''><span class="icon-del"></span></li>
+                                    <li class="lsli"><img src="http://f.hiphotos.baidu.com/image/pic/item/f2deb48f8c5494ee0d44a9f529f5e0fe98257efc.jpg"/><input type="hidden" id='99' name="" value=''><span class="icon-del"></span></li>
+
+                                </ul>
+                            </div>
+                            <div class="upload_btn">
+                                <input type="file" id="file_id" multiple="multiple">
+                                <span class="upload-text">上传凭证</span>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <input type="submit" value="提交申请" class="btn-add">
+        </div>
+    </div>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/plugins/upload/upload.js"></script>
+<script src="static/plugins/layer/layer.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script src="./static/js/tuikuan.js"></script>
+<script>
+    $(function(){
+        $(".mod-type li").click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>收货地址</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+<div id="address-list-wrap">
+    <header class="touch-header">
+        <a href="javascript:window.history.go(-1)" class="header-back"></a>
+        <div class="header-title">收货地址</div>
+    </header>
+    <section class="address-wrap">
+        <div class="title">
+            <a href="address_add.html">新增地址<i class="icon-right-jian"></i></a>
+        </div>
+        <div class="list">
+            <div id="addrlist">
+                <div class="group">
+                    <div class="name">
+                        <span>张萌</span>
+                        <span class="ml5">13500908765</span>
+                    </div>
+                    <div class="address">
+                        <div class="address-text">海淀区上地十街</div>
+                    </div>
+                    <div class="status-list clearfix">
+                        <div class="fl box1 selected">
+                            <a href="#">
+                                <span class="icon-default"></span>
+                                <span class="text-name tc">设为默认</span>
+                            </a>
+                        </div>
+                        <div class="fl box2">
+                            <a href="address_edit.html">
+                                <span class="icon-edit"></span>
+                                <span class="text-name tc">编辑</span>
+                            </a>
+                        </div>
+                        <div class="fl box3">
+                            <a href="#" class="delete" addr="65">
+                                <div class="icon-delete"></div>
+                                <span class="text-name tc">删除</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="name">
+                        <span>张萌</span>
+                        <span class="ml5">13500908765</span>
+                    </div>
+                    <div class="address">
+                        <div class="address-text">海淀区上地十街</div>
+                    </div>
+                    <div class="status-list clearfix">
+                        <div class="fl box1">
+                            <a href="#">
+                                <span class="icon-default"></span>
+                                <span class="text-name tc">设为默认</span>
+                            </a>
+                        </div>
+                        <div class="fl box2">
+                            <a href="address_edit.html">
+                                <span class="icon-edit"></span>
+                                <span class="text-name tc">编辑</span>
+                            </a>
+                        </div>
+                        <div class="fl box3">
+                            <a href="#" class="delete" addr="65">
+                                <div class="icon-delete"></div>
+                                <span class="text-name tc">删除</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>				
+            </div>
+    </section>
+</div>
+<div class="copyright">版权©2016 空气小白  腾信通</div>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/plugins/layer/layer.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script>
+    $(function(){
+        $(".group .box1").click(function(){
+            $(".group .box1").removeClass('selected');
+            $(this).addClass('selected');
+        });
+    });
+</script>
+</body>
+</html>

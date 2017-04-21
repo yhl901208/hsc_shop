@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>购物车</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+<div id="shop_car-warp">
+    <!-- 为空的显示 -->
+    <div class="wrapper" style='display: block' id='empty_cart' >
+        <div class="cart_empty">
+            <div class="cart_img">
+                <div class="img-style"></div>
+                <span style="color: #666666" class="f13">购物车空着哦~</span>
+                <span style="color: #999999" class="f13">快给我挑点宝贝吧</span>
+            </div>
+            <div class="cart_button">
+            <a href="#">去首页逛逛</a>
+            </div>
+        </div>
+    </div>
+    <!-- 为空的显示end  -->
+    <div id='usercart' style='display: none' >
+    <section class="car-wrap">
+        <div class="car-title-wrap">
+            <div class="cart-title">
+                <span class="q-checkbox selected"></span>
+                <span class="q-text">全选</span>
+                <span class="delete"></span>
+            </div>
+        </div>
+        <div class="cal-list">
+            <ul>
+                <li>
+                        <span class="checkbox selected" cartkey='30' value="11.9" one-price="11.90"></span>
+                        <a href="#" class="img-wrap">
+                            <img src="./static/images/imgdemo/lb-img1.png"/>
+                        </a>
+                        <div class="product-desc">
+                            <div class="product-title ">
+                                <a class="text-overfolw" href="#">竹妃竹纤维抽纸竹妃竹纤维抽纸竹妃竹纤维抽纸 </a> 
+                            </div>
+                            <div class="product-color">
+                                颜色：粉色
+                            </div>
+                            <div class="product-price">
+                                <span class="text-red price-nums f17">￥11.90</span>
+                            </div>
+                        </div>
+                        <div class="clearfix num-wrap">
+                            <span class="icon-minus dib minus">-</span>
+                            <input class="quantity dib pri-num" id="stock_30" value="1" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onpaste="this.value=this.value.replace(/[^0-9]/g,'')" oncontextmenu = "this.value=this.value.replace(/[^0-9]/g,'')"/>
+                            <span class="icon-plus dib add">+</span>
+                        </div>
+                    </li>          
+                   
+                   
+                   
+            </ul>
+        </div>
+        <section class="all-price">
+            <ul class="clearfix">
+                <li style="">
+                    <span class="f12 h-text" style="margin-left: 0.15rem;">合计:</span>
+                    <small class="text-red f14 price-monney">¥</small>
+                    <span class="price-num f14 text-red">0</span>
+                </li>
+                
+                <li style="float: right;">
+                     <span class="f12">
+                         <i class="text-red mum-conts f12">共0件</i> 
+                         <i>不含运费</i>
+                     </span>
+                    <button type="button" class="btnC-pay">结算</button></li>
+            </ul>
+        </section>
+    </section>
+</div>
+</div>
+<input type="hidden" id="all_number" value="0"/>
+<div style="height: 1.0rem;"></div>
+ <footer>
+        <ul class="bottom-menu clearfix">
+            <li class="">
+                <a href="./index.html">
+                    <div class="img-style"></div>
+                    <div class="text">首页</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./cart.html" class="">
+                     <div class="img-style"></div>
+                    <div class="text">发现</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="./order_list.html" class="">
+                      <div class="img-style"></div>
+                    <div class="text">购物车</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./user.html" class="c3">
+                      <div class="img-style"></div>
+                    <div class="text">我的</div>
+                </a>
+            </li>
+        </ul>
+</footer>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/plugins/layer/layer.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script src="static/js/shop_car.js"></script>
+<script>
+     $(function () {
+        ShopCar.init();
+     });
+</script>
+</body>
+</html>

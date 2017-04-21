@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>订单</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+    <div id="order-down_wrap">
+        <div class="bg-top-bar"></div>
+        <div class="user-info">
+            <div class="user-address">
+                <div class="shou-desc" style="display: block;">
+                    <a href="">
+                        <div class="clearfix">
+                            <span class="fl name">收货人:张萌</span>
+                            <span class="fr tel">手机:13500908765</span>
+                        </div>
+                        <div class="shou-address">
+                            海淀区上地十街                
+                        </div>
+                    </a>
+                </div>
+                <div class="empty" style="display: none">
+                    <a href="#">暂时无收货人信息，点击添加</a>
+                </div>
+            </div>
+            <a href="#" class="link-right"></a>
+        </div>
+        <div class="product-wrap">
+            <div class="title" style="border-bottom:none">购买商品</div>
+            <div class="product-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./static/images/imgdemo/lb-img2.png"/>
+                            <div class="goods-right">
+                                <div class="shop-name">空气小白空气监测仪空气小白空气监测仪
+                                        空气小白空气监测仪
+                                </div>
+                                <div class="price-num">
+                                    <span>￥63.70</span>
+                                    <s>￥63.70</s>
+                                    <span class="num tr">×1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./static/images/imgdemo/lb-img2.png"/>
+                            <div class="goods-right">
+                                <div class="shop-name">空气小白空气监测仪空气小白空气监测仪
+                                        空气小白空气监测仪
+                                </div>
+                                <div class="price-num">
+                                    <span>￥63.70</span>
+                                    <s>￥63.70</s>
+                                    <span class="num tr">×1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="group-box">
+            <a class="javascript:;">
+                <label>
+                    配送费
+                </label>
+                <span>EMS ￥17.00</span>
+
+            </a>
+            <a class="javascript:;">
+                <label>
+                    买家留言
+                </label>
+                <input type="text" id='input_remark' name="remark" placeholder="选填,可填写你的要求..."/>
+            </a>
+            <a class="javascript:;">
+                <span style="margin-right:0.15rem">共2件商品 </span>
+                <span>合计：<i class="text-red">￥282.20</i></span>
+            </a>
+        </section>
+        <section class="pay-types">
+            <div class="title">选择支付方式</div>
+            <ul>
+                <li>
+                    <div class="pay-name iocn-small-jifen" >积分抵扣<span class="text-red" style="font-size: 0.11rem;">（可用245积分抵扣2.45元）</span></div>
+                    <span class="pay-status" payment='3'></span>
+                </li>
+                <li>
+                    <div class="pay-name iocn-small-weixi" >微信支付</div>
+                    <span class="pay-status selected" payment='1'></span>
+                </li>
+            </ul> 
+        </section>
+        <section class="pay-btn text-right">
+                    <span style="font-size:0.12rem">合计:</span>
+                    <small class="text-red pic-num">¥</small>
+                    <span class="text-red pic-num f16" id="order_price">118</span>
+                    <button id='order_go_pay' type="button" class="btn-sm" style="background-color:#fe2d2d" >立即支付</button>
+        </section>
+    </div>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script>
+    $(function(){
+        $(".pay-types li").click(function(){
+            $(".pay-types li .pay-status").removeClass('selected');
+            $(this).find('.pay-status').addClass("selected");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>填写资料</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+<div id="user_info-wrap">
+ <form action="" method="post" id="myForm">
+    <div class="wrap-box">
+        <section class="input-group">
+            <div class="title">个人资料</div>
+            <div class="ipt-list">
+                <div class="input-wrap">
+                    <div class="text">
+                        <i class="icon-people"></i>
+                        <span>真实姓名</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="text" class="" name="name" id="name" value="" placeholder="未设置"/>
+
+                    </div>
+                </div>
+               
+                <div class="input-wrap">
+                    <div class="text">
+                        <i class="icon-tel"></i>
+                        <span>手机号码</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="tel" class="" name="phone" id="tel" value="" placeholder="未设置">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="text">
+                        <i class="icon-home"></i>
+                        <span>单位名称</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="text" class="" name="job_name" id="homename" value="" placeholder="未设置"/>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="text">
+                        <i class="icon-job"></i>
+                        <span>所在职位</span>       
+                    </div>
+                    <div class="wrap-ipt">
+                        <input type="text" class="" name="job_shuo" id="jobname" value="" placeholder="未设置"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="btn-wrap mar-top60">
+         <input type="hidden" name="id" value="">
+         <input type="submit" class="btn-red" value="保存"/>
+    </div>
+</form>
+</div>
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script src="./static/plugins/jqueryform/jquery.form.js"></script>
+<script type="text/javascript" >
+    $(function () {
+        
+        $("#myForm").submit(function(){  
+            var phone = $('#tel').val();
+            if(phone){
+                if(!(/^1[3|4|5|7|8]\d{9}$/.test(phone))){ 
+                     alert("手机号码有误，请重填");  
+                     return false; 
+                } 
+            }
+
+            $(this).ajaxSubmit({  
+                type:"post",  //提交方式  
+                dataType:"json", //数据类型  
+                url:"/user/user_info.html", //请求url  
+                success:function(data){ //提交成功的回调函数和相关的验证信息  
+                   if(data.result == 404){
+                        alert('您没有更改数据')
+                   }else{
+                        alert("修改成功");
+                   }
+                    
+                }  
+            });  
+            return false; //不刷新页面  
+        });  
+
+    });
+</script>      
+</body>
+</html>
