@@ -721,7 +721,7 @@ footer .bottom-menu li.active:nth-child(4) .img-style{
     text-align: left;
     height: 0.40rem;
     position: relative;
-    background: #34b597;
+    background: #43ac43;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -736,7 +736,7 @@ footer .bottom-menu li.active:nth-child(4) .img-style{
     background: url(../images/icon-jiantou.png) no-repeat center;
     background-size:0.22rem;
     width:0.23rem;
-    height:0.23rem;
+    height:0.40rem;
     z-index: 100000;
 }
 .header-title {
@@ -762,7 +762,7 @@ footer .bottom-menu li.active:nth-child(4) .img-style{
     right: 0.10rem;
     color: #fff;
     font-size: 0.12rem;
-    background-color: #298f77;
+    background-color: #4c8540;
     text-align: center;
     border-radius: 4px;
 }

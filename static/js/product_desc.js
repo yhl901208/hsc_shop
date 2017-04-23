@@ -34,9 +34,27 @@ var Product_Desc = {
     actionSheet:function(){
         var self = this;
         
-        $(".select-droduct-type").click(function(){
-            self.actionSheetShow(); //显示弹出层
+        
+        $(".select-droduct-type").click(function(){//显示属性弹出层
+            $("#add_car,#add_ok").hide();
+            $("#select_type").show();
+            self.actionSheetShow(); 
         });
+        
+        
+        $(".addshopcar").click(function(){//加入购物车弹出层
+            $("#select_type,#add_ok").hide();
+            $("#add_car").show();
+            self.actionSheetShow(); 
+        });
+        
+         $(".buynow").click(function(){//立即购买弹出层
+            $("#add_car,#select_type").hide();
+            $("#add_ok").show();
+            self.actionSheetShow(); 
+        });
+  
+        
         $("#mask").click(function(){
             self.actionSheetHide(); //关闭弹出层
         });
