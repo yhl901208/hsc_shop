@@ -648,7 +648,7 @@ footer .bottom-menu {
 }
 
 footer .bottom-menu li {
-    width:25%;
+    width:33.3333%;
     float: left;
     background: #fff;
     text-align: center;
@@ -668,23 +668,20 @@ footer .bottom-menu li .img-style{
 }
 
 footer .bottom-menu li:nth-child(1) .img-style{
-   background: url(../images/foot.svg) no-repeat -0.22rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+   background: url(../images/footer.svg) no-repeat -0.02rem 0rem;
+   background-size: 1.60rem 0.2424rem;
 }
 
 footer .bottom-menu li:nth-child(2) .img-style{
-   background: url(../images/foot.svg) no-repeat -0.62rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+  background: url(../images/footer.svg) no-repeat -0.83rem 0rem;
+  background-size: 1.60rem 0.2424rem;
 }
 footer .bottom-menu li:nth-child(3) .img-style{
-   background: url(../images/foot.svg) no-repeat -1.02rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+   background: url(../images/footer.svg) no-repeat -1.36rem 0rem;
+  background-size: 1.60rem 0.2424rem;
 
 }
-footer .bottom-menu li:nth-child(4) .img-style{
-   background: url(../images/foot.svg) no-repeat -1.42rem 0rem;
-   background-size: 1.66rem 0.2075rem;
-}
+
 footer .bottom-menu li .text {
     margin-top: 4px;
     text-align: center;
@@ -699,22 +696,20 @@ footer .bottom-menu li.active .img-style{
    margin-top: 0.06rem;
 }
 footer .bottom-menu li.active:nth-child(1) .img-style{
-   background: url(../images/foot.svg) no-repeat -0.02rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+   background: url(../images/footer.svg) no-repeat -0.29rem 0rem;
+   background-size: 1.60rem 0.2424rem;
 }
 
 footer .bottom-menu li.active:nth-child(2) .img-style{
 
-   background: url(../images/foot.svg) no-repeat -0.42rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+   background: url(../images/footer.svg) no-repeat -0.56rem 0rem;
+   background-size: 1.60rem 0.2424rem;
+
 }
 footer .bottom-menu li.active:nth-child(3) .img-style{
-   background: url(../images/foot.svg) no-repeat -0.82rem 0rem;
-   background-size: 1.66rem 0.2075rem;
-}
-footer .bottom-menu li.active:nth-child(4) .img-style{
-   background: url(../images/foot.svg) no-repeat -1.22rem 0rem;
-   background-size: 1.66rem 0.2075rem;
+   background: url(../images/footer.svg) no-repeat -1.1rem 0rem;
+   background-size: 1.60rem 0.2424rem;
+
 }
 
 .touch-header{

@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>弘善筹</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="./static/css/base.css">
+<link rel="stylesheet" type="text/css" href="./static/plugins/mobiscroll/mobiscroll.css">
+<link rel="stylesheet/less" type="text/css" href="./static/css/layout.less">
+</head>
+<body>
+<div id="funding_list-wrap">
+    
+    <section class="nav">
+        <ul class="clearfix"> 
+            <li class="active" data-id="1">
+                <a href="#">众筹</a>
+            </li>
+            <li class="" data-id="2">
+                <a href="#">会员互助</a>
+            </li>
+        </ul>
+    </section>
+ 
+    <section class="list-1" style="display: block;">
+        
+        <div class="time clearfix">
+           <input id="select_time" placeholder="请选择时间" />
+           <span class="icon-time"></span>
+        </div>
+        
+        <div class="money">
+            <div class="item clearfix">
+                <span class="fl">总金额</span>
+                <span class="fr">18,943.02元</span>
+            </div>
+            <div class="item clearfix">
+                <span class="fl">总收益</span>
+                <span class="fr">18,943.02元</span>
+            </div>
+        </div>
+      
+        <div class="table-title clearfix">
+            <span class="">项目名称</span>
+            <span class="">时间</span>
+            <span class="">金额(元)</span>
+            <span class="">收益(元)</span>
+        </div>
+        
+        <div class="table-content">
+            <div class="line">
+                <a href="javascript:void(0)" class="clearfix">
+                    <span class="db fl text-overfolw">
+                        公益众筹
+                    </span>
+                    <span class="db fl">2-26</span>
+                    <span class="db fl">50,000,0.2</span>
+                    <span class="db fl">10,000</span>
+                </a>
+            </div>
+            <div class="line">
+                <a href="javascript:void(0)" class="clearfix">
+                    <span class="db fl text-overfolw">
+                        公益众筹
+                    </span>
+                    <span class="db fl">2-26</span>
+                    <span class="db fl">50,000,0.2</span>
+                    <span class="db fl">10,000</span>
+                </a>
+            </div>
+            <div class="line">
+                <a href="javascript:void(0)" class="clearfix">
+                    <span class="db fl text-overfolw">
+                      公益众筹
+                    </span>
+                    <span class="db fl">2-26</span>
+                    <span class="db fl">50,000,0.2</span>
+                    <span class="db fl">10,000</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="list-2" style="display: none">
+        <div class="content-list">
+            <ul>
+                <li>
+                    <div class="user-wrap">
+                        <img src="./static/images/imgdemo/imguser.jpg" />
+                        <div class="info">
+                            <div class="name">不会飞的小鸟</div>
+                            <div class="time-text">2015-12-9</div>
+                        </div>
+                    </div>
+                    <span class="money">￥9.0</span>
+                </li>
+                <li>
+                    <div class="user-wrap">
+                        <img src="./static/images/imgdemo/imguser.jpg" />
+                        <div class="info">
+                            <div class="name">不会飞的小鸟</div>
+                            <div class="time-text">2015-12-9</div>
+                        </div>
+                    </div>
+                    <span class="money">￥9.0</span>
+                </li>
+                <li>
+                    <div class="user-wrap">
+                        <img src="./static/images/imgdemo/imguser.jpg" />
+                        <div class="info">
+                            <div class="name">不会飞的小鸟</div>
+                            <div class="time-text">2015-12-9</div>
+                        </div>
+                    </div>
+                    <span class="money">￥9.0</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+<footer>
+        <ul class="bottom-menu clearfix">
+            <li class="active">
+                <a href="./index.html">
+                    <div class="img-style"></div>
+                    <div class="text">众筹</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="./cart.html" class="">
+                     <div class="img-style"></div>
+                    <div class="text">提现</div>
+                </a>
+            </li>
+          
+            <li class="active">
+                <a href="./user.html" class="c3">
+                      <div class="img-style"></div>
+                    <div class="text">我的</div>
+                </a>
+            </li>
+        </ul>
+</footer>
+    
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<script src="static/plugins/layer/layer.js"></script>
+<script src="static/plugins/mobiscroll/mobiscroll.js"></script>
+<script src="static/js/adaptation.js"></script>
+<script src="static/plugins/less/less.min.js"></script>
+<script>
+    $(function () {
+
+        // Mobiscroll Range initialization
+        $('#select_time').mobiscroll().range({
+            theme: 'android-holo-light', 
+            lang: 'zh', 
+            display: 'bottom', 
+            mode: 'scroller', 
+            defaultValue: [new Date(2017, 3, 10), new Date(2017, 3, 17)],
+            onSet: function (event, inst) { // More info about onSet: https://docs.mobiscroll.com/3-0-0_beta5/numpad#!event-onSet
+                console.log(event.valueText);
+                alert(event.valueText);
+            }
+
+        });
+        $(".nav li").click(function(){
+            var data_id = $(this).attr("data-id");
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".list-1,.list-2").hide();
+            $(".list-"+data_id).show();
+            
+        });
+            
+        
+    });
+
+</script>
+</body>
+</html>

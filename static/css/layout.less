@@ -114,7 +114,7 @@ a{
             .btn.cur:after {
                 content: "";
                 width: 100%;
-                height: 0.02rem;
+                height: 0.04rem;
                 background-color: #43ac43;
                 position: absolute;
                 bottom: 0px;
@@ -1035,7 +1035,7 @@ margin-top: 0.10rem;
 #order_list-wrap .nav-wrap {
   height: 0.4rem;
   background-color: #fff;
-  box-shadow: 0px 2px 5px 0px #F1DEDE;
+/*  box-shadow: 0px 2px 5px 0px #F1DEDE;*/
 }
 #order_list-wrap .nav-wrap a {
   color: #333333;
@@ -1078,7 +1078,7 @@ margin-top: 0.10rem;
   margin-bottom: 0.1rem;
 }
 #order_list-wrap .order-con-list .group-order {
-  box-shadow: 0px 2px 5px 0px #eaeaea;
+/*  box-shadow: 0px 2px 5px 0px #eaeaea;*/
   margin-top: 0.06rem;
   background-color: #fff;
 }
@@ -1086,7 +1086,7 @@ margin-top: 0.10rem;
   height: 0.35rem;
   line-height: 0.35rem;
   position: relative;
-  background: url(../images/dd.png) no-repeat 0.15rem 0.105rem;
+  background: url(../images/dd.png) no-repeat 0.15rem center;
   background-size: 0.12rem 0.12rem;
   padding-left: 0.30rem;
   background-color: #fff;
@@ -1179,10 +1179,9 @@ margin-top: 0.10rem;
   height: 0.25rem;
   line-height: 0.25rem;
   font-size: 0.12rem;
-  color: #fff;
+  color: #e85b46;
   text-align: center;
-  background-color: #fe2d2d;
-  border: 1px solid #fe2d2d;
+  border: 1px solid #e85b46;
   border-radius:18px;
   display: inline-block;
   margin-top: 0.07rem;
@@ -1197,7 +1196,7 @@ margin-top: 0.10rem;
 #order_list-wrap .status {
   position: absolute;
   right: 0.2rem;
-  color: #61a951;
+  color: #e85b46;
 }
 #order_list-wrap .text-red {
   color: #ce1e2c;
@@ -1717,270 +1716,193 @@ margin-top: 0.10rem;
     margin-top: 0.20rem;
 }
 
+
+
 /*---------分销人员页面-----------*/
-#fenxiao_list-wrap{
+#funding_list-wrap{
 }
-#fenxiao_list-wrap .tab {
+#funding_list-wrap .nav {
   position: relative;
   height:0.40rem;
   background-color: #ffffff;
-  box-shadow: 0px 2px 7px 0px #ebebeb;
-
+/*  box-shadow: 0px 2px 7px 0px #ebebeb;*/
 }
-#fenxiao_list-wrap .tab ul {
+#funding_list-wrap .nav ul {
   padding-left: 0rem;
   margin-top: 0rem;
 }
-#fenxiao_list-wrap .tab ul .selected a{
-  color: #42ba9e;
-  border-bottom:1px solid #42ba9e;
-  height:0.39rem;
-  line-height: 0.39rem;
+#funding_list-wrap .nav ul .active a{
+  color: #43ac43;
+  height:0.40rem;
+  line-height: 0.40rem;
   display: block;
 }
-#fenxiao_list-wrap .tab ul li {
+#funding_list-wrap .nav ul li {
   float: left;
-  width: 33.3333%;
+  width:50%;
   position: relative;
   height:0.40rem;
   text-align: center;
   line-height:0.40rem;
 }
-#fenxiao_list-wrap .tab ul li:after{
+#funding_list-wrap .nav ul li.active:after{
   content: "";
-  height:0.12rem;
-  width: 1px;
+  height:0.02rem;
+  width:0.60rem;
   position: absolute;
-  right: 0rem;
-  top:50%;
-  -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-  background-color: #eeeeee;    
+  left:50%;
+  bottom:0%;
+  -webkit-transform: translate(-50%,0%);
+  transform: translate(-50%, 0%);
+  background-color: #43ac43;    
 }
-#fenxiao_list-wrap .tab ul li a {
+#funding_list-wrap .nav ul li a {
   color: #333333;
   font-size:0.13rem;
 }
 
-#fenxiao_list-wrap .table-title{
-    height:0.35rem;
-    background-color: #f2f2f2;
-    border-top: 1px solid #cdd7d5;
-    margin-top:0.07rem;
+
+#funding_list-wrap .time{
+    height: 0.40rem;
+    margin: 0 0.10rem;
+    position: relative;
 }
-#fenxiao_list-wrap .table-title span{
-    width:30%;
-    height:0.35rem;
-    line-height:0.35rem;
+#funding_list-wrap .time #select_time{
+    height: 0.40rem;
+    font-size: 0.12rem;
+    background-color: #f5f6f8;
+    width:100%;
+}
+#funding_list-wrap .time .icon-time{
+    background: url(../images/icon-time.png) no-repeat center;
+    background-size: 0.19rem;
+    width: 0.20rem;
+    height: 0.20rem;
+    display: block;
+    margin-top: 0.10rem;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#funding_list-wrap .money{
+    background-color: #fff;
+}
+#funding_list-wrap .money .item{
+    height: 0.40rem;
+    line-height: 0.40rem;
+    position: relative;
+    padding: 0px 0.10rem;
+    font-size: 0.13rem;
+    color: #333333;
+    position: relative;
+}
+#funding_list-wrap .money .item:before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    color: #dddddd;
+    border-bottom: 1px solid #dddddd;
+    left: 0px;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    transform-origin: 100% 0;
+}
+
+#funding_list-wrap .table-title{
+    height:0.40rem;
+    background-color: #ddf0dd;
+/*    margin-top:0.07rem;*/
+}
+#funding_list-wrap .table-title span{
+    width:25%;
+    height:0.40rem;
+    line-height:0.40rem;
     text-align: center;
     font-size:0.12rem;
     color: #333333;
     display: block;
     float: left;
 }
-#fenxiao_list-wrap .table-title span:first-child{
+/*#funding_list-wrap .table-title span:first-child{
     width:40%;
-}
-#fenxiao_list-wrap .table-content{
+}*/
+#funding_list-wrap .table-content{
     background-color: #fff;
     box-shadow: 0px 2px 7px 0px #ebebeb;
 }
-#fenxiao_list-wrap .table-content .line{
-    height:0.55rem;
+#funding_list-wrap .table-content .line{
+    height:0.5rem;
     border-bottom: 1px solid #e8e8e8;
     position:relative;
 }
-#fenxiao_list-wrap .table-content .line a{
+#funding_list-wrap .table-content .line a{
    display: block;
 }
-#fenxiao_list-wrap .table-content .line span{
-    height:0.55rem;
-    line-height:0.55rem;
+#funding_list-wrap .table-content .line span{
+    height:0.5rem;
+    line-height:0.5rem;
     text-align: center;
-    width:30%;
+    width:25%;
     color: #999999;
     color: #666666;
     font-size: 0.12rem;
     float: left;
     display: block;
 }
-#fenxiao_list-wrap .table-content .line span:first-child{
-    width:40%;
-}
-#fenxiao_list-wrap .table-content .line img{
-    height:0.30rem;
-    width:0.30rem;
-   border-radius: 50%;
-   vertical-align: middle;
-}
-#fenxiao_list-wrap .table-content .line.active span{
-  color: #fe4c40 !important;
-}
-#fenxiao_list-wrap .table-content .line:last-child{
+#funding_list-wrap .table-content .line:last-child{
   border-bottom:none;
 }
-
-
-
-/*----分佣订单----*/
-#fy_order-wrap .tabs{
-    position: relative;
-    box-shadow: 0px 2px 7px 0px #ebebeb;
-    width: 100%;
-    margin-bottom: 0.075rem;
-}
-#fy_order-wrap .tabs .bottom-line{
-    display:block;
-    background: url(../images/common/fexiao.png) no-repeat;
-    background-size: 1.59rem 0.04rem;
-    width: 1.59rem;
-    height: 0.04rem;
-    position: absolute;
-    left: 0rem;
-    bottom: 0rem;
-    display: none;
-}
-
-#fy_order-wrap .tabs ul li{
-    height: 0.4rem;
-    text-align: center;
+#funding_list-wrap .content-list{
     background-color: #fff;
-    font-size: 0.15rem;
+    margin-top: 0.10rem;
+}
+#funding_list-wrap .content-list ul li{
     position: relative;
-    float: left;
-    width: 50%;
 }
-#fy_order-wrap .tabs ul li:after{
-  content: "";
-  height:0.12rem;
-  width: 1px;
-  position: absolute;
-  right: 0rem;
-  top:50%;
-  -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-  background-color: #eeeeee;    
+#funding_list-wrap .content-list ul li:after{
+    .bottom-line();
 }
-#fy_order-wrap .tabs ul li a{
-    color: #666666;
-    font-size: 0.13rem;
-    height: 0.39rem;
-    line-height:0.39rem;
-    display: block;
-}
-
-#fy_order-wrap .selected a{
-    color:#34b597 !important;
-    border-bottom: 1px solid #34b597;
-    text-decoration: none;
-}
-
-#fy_order-wrap .user-wrap {
-    position: relative;
-    padding: 0rem 0.15rem;
-    height: 0.35rem;
-    border-bottom: 1px solid #dddddd;
-}
-#fy_order-wrap .user-info {
-    height: 0.35rem;
-    line-height: 0.35rem;
-    color: #333333;
-    font-size: 0.11rem;
-}
-#fy_order-wrap .user-info span{
-    margin-left: 0.30rem;
-}
-#fy_order-wrap .user-info img {
-    width: 0.25rem;
-    height: 0.25rem;
-    position: absolute;
-    top:50%;
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
-    margin-right: 0.06rem;
+#funding_list-wrap .content-list ul li img{
+    width: 0.30rem;
+    height: 0.30rem;
     border-radius: 50%;
+    position: absolute;
+    left: 0.15rem;
+    top: 50%;
+    margin-top: -0.15rem;
 }
 
+#funding_list-wrap .content-list ul li .info{
+    margin-left: 0.50rem;
+    padding: 0.13rem 0px;
+}
 
-#fy_order-wrap  .user-num {
-    position: absolute;
-    right: 0.1rem;
-    top: 0.1rem;
+#funding_list-wrap .content-list ul li .info .name{
     color: #666666;
-    font-size: 0.11rem;
-}
-
-#fy_order-wrap .sec-ground{
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0px 2px 7px 0px #ebebeb;
-    margin-bottom: 0.075rem;
-}
-#fy_order-wrap .content{
-    padding-left: 0rem;
-    margin: 0rem 0.15rem;
-}
-
-#fy_order-wrap .content .box{
-    position: relative;
-    border-bottom: 1px solid #dddddd;
-/*    padding: 0.06rem 0rem;*/
-    height: 0.80rem;
-    a{
-        display: block;
-    }
-}
-#fy_order-wrap .content .box img {
-    width: 0.60rem;
-    height: 0.60rem;
-    position: absolute;
-    left: 0rem;
-    top: 0.10rem;
-}
-
-#fy_order-wrap .content .box .right {
-    margin-left: 0.68rem;
-    min-height: 0.8rem;
-    padding-top: 0.10rem;
-}
-#fy_order-wrap .content .box .right .title {
-    color: #333333;
-    font-size: 0.12rem;
-    height: 0.32rem;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp:2;
-    -webkit-box-orient: vertical;
-    box-sizing: border-box;
-}
-#fy_order-wrap .content .all-price {
-    height: 0.4rem;
-    line-height: 0.4rem;
     font-size: 0.12rem;
 }
 
-#fy_order-wrap .content .box .right .one-money {
-   padding-top: 0.08rem;
-}
-
-.empty{
-    text-align: center;
-}
-.empty .img-style{
-    
-    background: url(../images/icon_empty.png) no-repeat center;
-    background-size:0.80rem;
-    width: 0.81rem;
-    height: 0.81rem;
-    margin: 0 auto;
-    margin-top: 0.65rem;
-}
-.empty .text{
-    font-size: 0.13rem;
+#funding_list-wrap .content-list ul li .info .time-text{
     color: #999999;
-    padding-top: 0.15rem;
+    font-size: 0.1rem;
+    margin-top: 0.02rem;
 }
+#funding_list-wrap .content-list .money{
+    color: #e85b46;
+    font-size: 0.12rem;
+    position: absolute;
+    right: 0.15rem;
+    top: 50%;
+     -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+
 
 /*--------申请提现------*/
 #withdraw_apply-wrap .user-account {
@@ -2554,7 +2476,7 @@ margin-top: 0.10rem;
 }
 #return-wrap .item{
    background-color: #fff;
-   box-shadow: 0px 2px 7px 0px #ebebeb;
+/*   box-shadow: 0px 2px 7px 0px #ebebeb;*/
    margin-bottom: 0.075rem;
    position: relative;
 }
@@ -2635,11 +2557,13 @@ margin-top: 0.10rem;
     height: 0.37rem;
     line-height: 0.37rem;
     padding-left: 0.15rem;
-    border-bottom: 1px solid #e8e8e8;
+    position: relative;
 }
-
+#return-wrap .title:after{
+    .bottom-line();
+}
 #return-wrap .mod-type .content {
-  box-shadow: 0px 2px 7px 0px #ebebeb;
+/*  box-shadow: 0px 2px 7px 0px #ebebeb;*/
 }
 #return-wrap .mod-type .content ul li {
   margin: 0rem 0.15rem;
@@ -2681,7 +2605,7 @@ margin-top: 0.10rem;
 #return-wrap .mod-input{
     background-color: #fff;
     margin-top: 0.07rem;
-    box-shadow: 0px 2px 7px 0px #ebebeb;
+/*    box-shadow: 0px 2px 7px 0px #ebebeb;*/
 }
 #return-wrap .mod-input .ipt-list ul li {
   position: relative;
@@ -2806,7 +2730,7 @@ margin-top: 0.10rem;
     border: none;
     text-align: center;
     zoom: 1;
-    background-color:#34b597;
+    background-color:#43ac43;
     color: #ffffff;
     font-size:0.14rem;
     -moz-border-radius:5px;
