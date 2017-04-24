@@ -42,3 +42,33 @@ and open the template in the editor.
     text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
     white-space:nowrap;/* 不换行 */
 }
+.top-line{
+    content: "";
+    position: absolute;
+    top: -1px;
+    height: 1px;
+    width: 100%;
+    color: #dddddd;
+    border-top: 1px solid #dddddd;
+    left: 0px;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    transform-origin: 100% 0;
+}
+.bottom-line{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    color: #dddddd;
+    border-bottom: 1px solid #dddddd;
+    left: 0px;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    transform-origin: 100% 0;
+}
