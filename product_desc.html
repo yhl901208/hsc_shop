@@ -212,13 +212,13 @@
                 <!--    底部购物模块 start-->
                 <div class="footerBtn am-cf">
                     <div class="shop-small-box">
-                        <a href="/wechat/index/index.html" class="icon-set">
+                        <a href="#" class="icon-set">
                             首页
                         </a>
-                         <a href="/wechat/index/index.html" class="icon-kefu">
+                         <a href="#" class="icon-kefu">
                             客服
                         </a>
-                        <a href="/wechat/cart/index.html" class="iocn-car">
+                        <a href="#" class="iocn-car">
                             <div class="detail_car_num" id="detail_car_num">0</div>
                              购物车
                         </a>
@@ -332,14 +332,15 @@
             tabsSwiper.slideTo($(this).index());
         });
         
-         $(window).scroll(function(){
+        //判断回到顶部方法
+        $(window).scroll(function(){
            if($(document).scrollTop() >= 116){
                $(".go-top").css({"bottom":"115px","opacity":"1"});
            }else{
                $(".go-top").css({"bottom":"25%","opacity":"0"});
            }
         });
-        //鐐瑰嚮鍥炲埌椤堕儴浜嬩欢
+        //点击回到顶部
         $(".go-top").click(function(){
             $("html,body").animate({scrollTop: '0px'}, 500);
         });
