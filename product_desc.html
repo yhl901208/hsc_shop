@@ -22,6 +22,8 @@
 </style>
 </head>
 <body>
+    <a class="icon-history" onClick="javascript :history.back(-1);"></a>
+    <a class="icon-gwc" href="#"></a>
     <div id="goods_desc-wrap">
         <div id="show_content" style="display:block;">
            <!--  轮播start  -->
@@ -107,6 +109,41 @@
                         <!--  图文详情end -->
                         <!-- 评价start -->
                         <div class="desc-show-3 swiper-slide" style="">
+                            <div class="pj-img clearfix">
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                                <img src="./static/images/imgdemo/imguser.jpg" />
+                            </div>
                             <div class="message-list">
                                <ul id="div_comment_list">
                                     <li>
@@ -118,6 +155,9 @@
                                         <div class="mess-time">2016-10-06 13:30</div>
                                     </li>                                
                                </ul>
+                                <div class="show-more">
+                                    <a class="btn-more">查看全部评价</a>
+                                </div>
                             </div>
                         </div>
                         <div class="desc-show-2 swiper-slide" style="">
@@ -255,6 +295,7 @@
             <div id="mcover" onclick="document.getElementById('mcover').style.display = '';" style=""><img src="static/images/tishi.png"></div>
         </div>
     </div>
+    <div class="go-top"><span>顶部</span></div>
     <script src="static/plugins/jquery/jquery.min.js"></script>
     <script src="static/plugins/swiper/swiper.min.js"></script>
     <script src="static/plugins/lazyload/jquery.lazyload.js"></script>
@@ -289,6 +330,18 @@
             $(".detail-nav .selected").removeClass('selected');
             $(this).addClass('selected');
             tabsSwiper.slideTo($(this).index());
+        });
+        
+         $(window).scroll(function(){
+           if($(document).scrollTop() >= 116){
+               $(".go-top").css({"bottom":"115px","opacity":"1"});
+           }else{
+               $(".go-top").css({"bottom":"25%","opacity":"0"});
+           }
+        });
+        //鐐瑰嚮鍥炲埌椤堕儴浜嬩欢
+        $(".go-top").click(function(){
+            $("html,body").animate({scrollTop: '0px'}, 500);
         });
 
     </script>

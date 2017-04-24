@@ -787,3 +787,52 @@ footer .bottom-menu li.active:nth-child(3) .img-style{
     height: 180px;
     z-index: 20001;
 }
+
+ .go-top {
+    display: block;
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    right: 20px;
+    bottom: 64px;
+    z-index: 999;
+    background-image: url("../images/go_top.png");
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .8s ease,opacity .6s ease;
+}
+.go-top span {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    display: block;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+}
+
+
+.icon-history{
+    background:url(../images/icon-history.png) no-repeat center;
+    background-size: 0.345rem 0.345rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    position: fixed;
+    left: 0.10rem;
+    top: 0.12rem;
+    z-index: 100;
+    display: block;
+}
+.icon-gwc{
+    background:url(../images/icon-gwc.png) no-repeat center;
+    background-size: 0.345rem 0.345rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    position: fixed;
+    right: 0.10rem;
+    top: 0.12rem;
+    z-index: 100;
+    display: block;
+}

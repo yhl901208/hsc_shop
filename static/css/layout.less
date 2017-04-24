@@ -396,11 +396,34 @@ a{
             }
             
         }
+        .desc-show-3{
+            .pj-img{
+                padding:0px 0.15rem;
+                padding-bottom: 0.13rem;
+                position:relative;
+                img{
+                    width:0.30rem;
+                    height: 0.30rem;
+                    border-radius:50%;
+                    float: left;
+                    margin-top: 0.13rem;
+                    margin-right: 0.09rem;
+                }
+                img:nth-child(9n+0)
+                {
+                    margin-right: 0rem;
+                }
+            }
+            .pj-img:before{
+               .bottom-line(); 
+            }
+        }
         .desc-show-3 .message-list {
             margin: 0px 0.10rem;
+           
             ul{
                 li{
-                    border-bottom: 1px solid #eeeeee;
+                    position:relative;
                     .user-wrap {
                         position: relative;
                         img {
@@ -426,7 +449,22 @@ a{
                         font-size: 0.12rem;
                     }
                 }
+                li:after{
+                    .bottom-line();
+                }
             }
+            .show-more{
+                padding:0.15rem 0px;
+                text-align:center;
+                .btn-more{
+                    border: 1px solid #f8654f;
+                    color: #f8654f;
+                    font-size: 0.12rem;
+                    border-radius: 15px;
+                    padding: 0.03rem 0.10rem;
+                }
+            }
+          
         }
         
         .desc-show-2{
@@ -721,7 +759,7 @@ a{
                 width: 0.30rem;
                 height: 0.30rem;
                 text-align: center;
-                line-height:0.30rem;
+                line-height:0.28rem;
                 background-color: #eeeeee;
                 margin: 0px 0px 0px 0px;
                 color: #666666;
@@ -2794,8 +2832,7 @@ margin-top: 0.10rem;
   position: relative;
   background-color: #fff;
   margin-bottom: 0.07rem;
-  box-shadow: 0px 2px 7px 0px #F1DEDE;
-
+/*  box-shadow: 0px 2px 7px 0px #F1DEDE;*/
 }
 #address-list-wrap .address-wrap .title a {
   color: #333333;
@@ -2816,8 +2853,7 @@ margin-top: 0.10rem;
 #address-list-wrap .address-wrap .list .group {
   margin-bottom: 0.075rem;
   background-color: #fff;
-  box-shadow: 0px 2px 7px 0px #F1DEDE;
-
+/*  box-shadow: 0px 2px 7px 0px #F1DEDE;*/
 }
 #address-list-wrap .address-wrap .list .group .name {
   color: #333333;
@@ -2837,10 +2873,15 @@ margin-top: 0.10rem;
   margin-top: 0.04rem;
 }
 #address-list-wrap .address-wrap .status-list {
-  border-top:1px solid #dddddd;
   margin: 0.12rem 0.15rem 0px 0.15rem;
   height: 0.34rem;
+  position: relative;
 }
+#address-list-wrap .address-wrap .status-list:before{
+    .top-line(); 
+}
+
+
 #address-list-wrap .address-wrap .status-list a {
   color: #34b597;
   display: block;
@@ -2851,7 +2892,7 @@ margin-top: 0.10rem;
 #address-list-wrap .address-wrap .status-list .text-name {
   height: 0.34rem;
   line-height: 0.34rem;
-  margin-left: 0.20rem;
+  margin-left: 0.18rem;
   font-size: 0.12rem;
 }
 #address-list-wrap .address-wrap .status-list .box1 {
@@ -2882,13 +2923,13 @@ margin-top: 0.10rem;
   background: url(../images/radio-dz.png) no-repeat center;
   background-size: 0.15rem 0.125rem;
   left: 0px;
-  top: 0.175rem;
+  top: 0.18rem;
 }
 #address-list-wrap .address-wrap .selected .icon-default {
   background: url(../images/shdz-moren.png) no-repeat center;
   background-size: 0.15rem 0.125rem;
   left: 0px;
-  top: 0.175rem;
+  top: 0.18rem;
 }
 #address-list-wrap .address-wrap .icon-edit {
   background: url(../images/shdz-bj.png) no-repeat center;
@@ -2918,7 +2959,6 @@ margin-top: 0.10rem;
 
 #add-edit-wrap .wrap-box {
   background: #fff;
-   box-shadow: 0px 2px 7px 0px #F1DEDE;
 }
 #add-edit-wrap .wrap-box .title {
   height: 0.36rem;
@@ -2928,16 +2968,23 @@ margin-top: 0.10rem;
   border-bottom: 1px solid #e8e8e8;
   color: #333333;
 }
+
+
+
+
 #add-edit-wrap .wrap-box .input-group {
   background: #fff;
   margin: 0 0.15rem;
 }
 #add-edit-wrap .wrap-box .input-group .ipt-list .input-wrap {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-image: linear-gradient(180deg, #dddddd, #dddddd 50%, transparent 50%);
-  background-size: 100% 1px;
+
+}
+#add-edit-wrap .wrap-box .input-group .ipt-list .input-wrap:after{
+    .bottom-line();
+}
+#add-edit-wrap .wrap-box .input-group .ipt-list .input-wrap:last-child:after{
+    content:none;
 }
 #add-edit-wrap .wrap-box .input-group .ipt-list .input-wrap .text {
   width: .79rem;
